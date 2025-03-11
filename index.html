@@ -1,299 +1,331 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>🤯 Urgent: Get 60% OFF Diagnostic Tests! Limited Time Offer</title>
+    <title>Book Top-Rated Diagnostic Tests Online | Health Point IND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🚨 Don't Miss Out! Book Diagnostic Tests & Doctor Appointments NOW.  Get UP TO 60% OFF, Same Day Reports, & Free Home Collection. Limited Slots! Book Fast.">
+    <meta name="description" content="Book Diagnostic Tests & Health Checkups Online.  Trusted Labs, Big Discounts (Up to 60% OFF), Fast Reports, Home Sample Collection. Book Your Test Today!">
     <style>
         :root {
-            --header-bg: #ffc107; /* Yellow header for more attention */
-            --card-bg: #fff3cd; /* Light yellow card background */
-            --footer-bg: #f8f9fa;
-            --accent: #dc3545; /* Red accent for urgency */
-            --text-dark: #212529; /* Darker text for contrast */
+            --header-bg: #e0f7fa; /* Light Cyan Header - Soft and clean */
+            --card-bg: #ffffff; /* White Cards - Clean and professional */
+            --footer-bg: #f0f4c3; /* Light Yellow Footer - Gentle contrast */
+            --accent: #00bcd4; /* Cyan Accent - Modern and trustworthy */
+            --primary-text: #333333; /* Dark Gray Text - Readable and professional */
+            --secondary-text: #555555; /* Medium Gray Text - Subtitles and details */
         }
 
         body {
-            font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; /* More attention-grabbing font */
+            font-family: 'Nunito Sans', sans-serif; /* Modern, clean font */
             margin: 0;
-            color: var(--text-dark);
+            color: var(--primary-text);
             overflow-x: hidden;
-            line-height: 1.5; /* Slightly tighter line height for punchier text */
+            line-height: 1.7; /* Good readability */
+            -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Header - Now less prominent, more of a banner */
+        /* Header */
         header {
             background: var(--header-bg);
-            padding: 0.5rem 0; /* Reduced header padding */
+            padding: 1.2rem 0; /* Slightly more vertical padding */
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Lighter shadow */
-            text-align: center; /* Center logo in header */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Very subtle shadow */
         }
 
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px; /* Slightly increased horizontal padding */
         }
 
         .logo {
-            color: black; /* Black logo for contrast on yellow */
-            font-size: 1.3rem; /* Slightly smaller logo */
-            font-weight: bold;
-            display: inline-block; /* Ensure logo is inline */
-            line-height: 1; /* Adjust logo line height */
-            vertical-align: middle; /* Vertically align logo */
+            color: var(--primary-text);
+            font-size: 1.6rem; /* Good logo size */
+            font-weight: 800; /* Strong font weight */
+            letter-spacing: -0.5px; /* Tighten letter spacing slightly */
         }
 
         .book-now-btn {
-            background: black; /* Black button */
-            color: var(--header-bg); /* Yellow text on button */
-            padding: 8px 20px; /* Smaller button padding */
-            border-radius: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 12px 28px; /* Well-sized button */
+            border-radius: 30px; /* More rounded button */
             text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9rem;
-            transition: background-color 0.3s, color 0.3s;
-            border: 2px solid transparent;
-            display: none; /* Hide header book now button for form-first approach */
+            font-weight: 700; /* Bold button text */
+            font-size: 1.1rem; /* Slightly larger button font */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Button shadow */
+            display: inline-flex; /* Use flex for icon alignment */
+            align-items: center;
+            justify-content: center;
         }
 
         .book-now-btn:hover {
-            background-color: var(--header-bg);
-            color: black;
-            border-color: black;
+            background-color: #0097a7; /* Slightly darker accent on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
         }
 
-        /* Form Section - FIRST SECTION NOW */
-        .form-container {
-            max-width: 1000px;
-            margin: 20px auto; /* Reduced top margin */
-            padding: 20px;
+        .btn-icon {
+            width: 20px; /* Icon size */
+            height: 20px;
+            margin-right: 8px; /* Spacing between icon and text */
+            filter: invert(1); /* Invert icon color to white */
         }
 
-        .form-section-title {
-            text-align: center;
-            font-size: 2.3rem; /* Larger, more impactful title */
-            color: var(--text-dark);
-            margin-bottom: 15px; /* Reduced margin */
-            font-weight: bolder; /* Even bolder */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
-        }
 
-        .form-section-subtitle {
-            text-align: center;
-            color: #495057; /* Slightly darker subtitle */
-            margin-bottom: 25px; /* Reduced margin */
-            font-size: 1.2rem; /* Slightly larger subtitle */
-            font-weight: 600; /* Semi-bold subtitle */
-        }
-
-        #tallyForm {
-            width: 100%;
-            height: 600px; /* Slightly reduced form height */
-            border: none;
-            border-radius: 10px; /* Slightly less rounded form */
-            overflow: hidden;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Form shadow */
-            margin-bottom: 20px; /* Add margin below form */
-        }
-
-        /* Hero Section - Now after form */
+        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #ff6f61, #ff4500); /* Hotter gradient for urgency */
-            color: white;
+            background: linear-gradient(140deg, #eceff1, #f0f4c3); /* Soft gray to light yellow gradient - Gentle and inviting */
+            color: var(--primary-text);
             text-align: center;
-            padding: 40px 20px; /* Reduced hero padding */
+            padding: 80px 25px; /* Generous hero padding */
         }
 
         .hero h1 {
-            font-size: 2rem; /* Slightly smaller hero headline */
-            margin: 0 0 12px; /* Reduced margin */
+            font-size: 2.8rem; /* Large, impactful headline */
+            margin: 0 0 20px;
             line-height: 1.3;
-            font-weight: bolder; /* Bolder hero headline */
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Hero headline shadow */
+            font-weight: 800; /* Strong headline font weight */
+            letter-spacing: -1px; /* Tighter letter spacing */
         }
 
         .hero p {
-            font-size: 1rem; /* Slightly smaller hero paragraph */
-            margin: 0 0 25px; /* Reduced margin */
-            opacity: 0.9;
-            font-weight: 500; /* Semi-bold paragraph */
+            font-size: 1.2rem; /* Good paragraph font size */
+            color: var(--secondary-text);
+            margin: 0 0 40px; /* Generous bottom margin */
+            font-weight: 400; /* Regular paragraph font weight */
+            max-width: 800px; /* Limit paragraph width for readability */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero-cta-btn {
             display: inline-block;
-            background: black; /* Black hero button */
+            background: var(--accent);
             color: white;
-            padding: 10px 25px; /* Smaller button padding */
-            border-radius: 20px;
+            padding: 15px 35px; /* Larger CTA button */
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* Hero button shadow */
+            font-weight: 700; /* Bold CTA button text */
+            font-size: 1.2rem; /* Slightly larger CTA font */
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* CTA button shadow */
         }
 
         .hero-cta-btn:hover {
-            background-color: #333; /* Darker black on hover */
+            background-color: #0097a7;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.25);
         }
+
+
+        /* Form Section */
+        .form-container {
+            max-width: 900px; /* Slightly narrower form container */
+            margin: 60px auto; /* Increased top margin */
+            padding: 30px; /* Form container padding */
+            background: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* Form container shadow */
+        }
+
+        .form-section-title {
+            text-align: center;
+            font-size: 2.4rem; /* Form section title size */
+            color: var(--primary-text);
+            margin-bottom: 20px;
+            font-weight: 800; /* Strong form title font weight */
+            letter-spacing: -0.8px;
+        }
+
+        .form-section-subtitle {
+            text-align: center;
+            color: var(--secondary-text);
+            margin-bottom: 35px;
+            font-size: 1.2rem;
+            font-weight: 400; /* Regular subtitle font weight */
+        }
+
+        #tallyForm {
+            width: 100%;
+            height: 650px; /* Adjust form height as needed */
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Form iframe shadow */
+        }
+
 
         /* Services Section */
         .services-section {
-            padding: 30px 20px; /* Reduced service section padding */
-            background: white;
+            padding: 70px 25px; /* Increased service section padding */
+            background: var(--footer-bg); /* Light yellow background for services */
         }
 
         .section-title {
             text-align: center;
-            font-size: 1.8rem; /* Slightly smaller section title */
-            color: var(--text-dark);
-            margin-bottom: 20px; /* Reduced margin */
-            font-weight: bolder; /* Bolder section title */
+            font-size: 2.6rem; /* Service section title size */
+            color: var(--primary-text);
+            margin-bottom: 35px;
+            font-weight: 800; /* Strong service title font weight */
+            letter-spacing: -0.7px;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly narrower service cards */
-            gap: 20px; /* Reduced gap */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider service cards */
+            gap: 30px; /* Increased gap between service cards */
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .service-card {
             background: var(--card-bg);
-            border-radius: 12px; /* Less rounded service cards */
-            padding: 20px; /* Reduced service card padding */
+            border-radius: 15px;
+            padding: 30px; /* Increased service card padding */
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Lighter service card shadow */
-            cursor: pointer;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.08); /* Service card shadow */
         }
 
         .service-card:hover {
-            transform: translateY(-3px); /* Less lift on hover */
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transform: translateY(-8px); /* More pronounced lift on hover */
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
         }
 
         .service-icon {
-            width: 50px; /* Smaller service icons */
-            height: 50px;
-            margin-bottom: 10px; /* Reduced margin */
-            opacity: 0.8;
+            width: 70px; /* Larger service icons */
+            height: 70px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            filter: grayscale(20%); /* Slightly desaturate icons */
         }
 
         .discount-badge {
-            background: var(--accent); /* Red discount badge for urgency */
+            background: #ff7043; /* Orange Discount Badge - Energetic and noticeable */
             color: white;
-            padding: 6px 12px; /* Smaller discount badge */
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: bold;
+            padding: 8px 16px; /* Slightly larger badge */
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 700; /* Bold badge text */
             display: inline-block;
-            margin-bottom: 8px; /* Reduced margin */
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Badge shadow */
         }
 
         .service-title {
-            font-size: 1.1rem; /* Slightly smaller service title */
-            font-weight: 600;
-            margin-bottom: 6px; /* Reduced margin */
+            font-size: 1.3rem; /* Service title size */
+            font-weight: 700;
+            margin-bottom: 10px;
         }
 
         .pricing {
-            margin: 10px 0; /* Reduced pricing margin */
-            font-size: 0.9rem;
+            margin: 18px 0;
+            font-size: 1.1rem;
             font-weight: 500;
+            color: var(--secondary-text);
         }
 
         .discounted-price {
             color: var(--accent);
-            font-weight: bold;
+            font-weight: 700;
+            font-size: 1.2rem; /* Slightly larger discounted price */
         }
 
         .original-price {
             text-decoration: line-through;
-            color: #6c757d;
-            margin-left: 6px;
+            color: #777777; /* Lighter original price color */
+            margin-left: 10px;
         }
+
 
         /* Testimonials */
         .testimonials-section {
-            padding: 40px 20px; /* Reduced testimonial padding */
-            background: #f8f9fa;
+            padding: 80px 25px; /* Increased testimonial padding */
+            background: var(--header-bg); /* Light cyan background for testimonials */
         }
 
         .testimonials-container {
             display: flex;
             overflow-x: auto;
             scroll-behavior: smooth;
-            padding: 15px 0; /* Reduced padding */
+            padding: 25px 0;
             -webkit-overflow-scrolling: touch;
         }
 
         .testimonial-card {
-            background: white;
-            border-radius: 12px; /* Less rounded testimonial cards */
-            padding: 20px; /* Reduced testimonial card padding */
-            min-width: 280px; /* Slightly narrower testimonial cards */
-            margin: 0 15px; /* Reduced margin */
-            box-shadow: 0 3px 8px rgba(0,0,0,0.08); /* Lighter testimonial shadow */
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px; /* Increased testimonial card padding */
+            min-width: 350px; /* Wider testimonial cards */
+            margin: 0 25px; /* Increased margin */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* Testimonial card shadow */
             flex-shrink: 0;
             text-align: left;
         }
 
         .testimonial-card h4 {
-            font-size: 1rem; /* Slightly smaller testimonial name */
-            font-weight: bold;
+            font-size: 1.2rem; /* Testimonial name size */
+            font-weight: 700;
             margin-top: 0;
-            margin-bottom: 8px; /* Reduced margin */
+            margin-bottom: 12px;
         }
 
         .testimonial-card p {
             font-style: italic;
-            color: #495057;
+            color: var(--secondary-text);
+            font-size: 1.1rem;
         }
+
 
         /* Footer */
         footer {
             background: var(--footer-bg);
-            padding: 25px 20px; /* Reduced footer padding */
-            border-top: 1px solid #ddd;
+            padding: 35px 25px; /* Increased footer padding */
+            border-top: 1px solid #eeeeee; /* Very light border */
             text-align: center;
-            color: #555;
+            color: var(--secondary-text);
         }
 
         footer p {
-            margin-bottom: 6px; /* Reduced margin */
+            margin-bottom: 8px;
         }
 
         footer a {
             color: var(--accent);
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
 
         footer a:hover {
-            color: #0056b3;
+            color: #008391; /* Slightly darker accent on footer hover */
         }
+
 
         /* WhatsApp Button */
         .whatsapp-btn {
             position: fixed;
-            bottom: 20px; /* Slightly higher WhatsApp button */
-            right: 20px; /* Slightly more left WhatsApp button */
+            bottom: 30px; /* Slightly lower WhatsApp button */
+            right: 30px; /* Slightly more right WhatsApp button */
             background: #25D366;
-            padding: 12px; /* Smaller WhatsApp button */
+            padding: 16px; /* Larger WhatsApp button */
             border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Lighter WhatsApp shadow */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* WhatsApp button shadow */
             z-index: 1000;
             transition: transform 0.2s;
         }
 
         .whatsapp-btn:hover {
-            transform: scale(1.05); /* Less scale up on hover */
+            transform: scale(1.1);
         }
+
 
         /* Modals - No changes needed here */
         .modal {
@@ -303,7 +335,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.5);
             z-index: 2000;
             overflow: auto;
         }
@@ -311,9 +343,9 @@
         .modal-content {
             background: white;
             width: 90%;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
+            max-width: 650px; /* Slightly wider modal */
+            margin: 60px auto; /* Increased modal top margin */
+            padding: 35px; /* Increased modal padding */
             border-radius: 15px;
             position: relative;
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -321,47 +353,50 @@
 
         .close-btn {
             position: absolute;
-            right: 20px;
-            top: 15px;
+            right: 25px;
+            top: 20px;
             font-size: 28px;
             cursor: pointer;
-            color: #6c757d;
+            color: #777777;
             transition: color 0.2s;
         }
 
         .close-btn:hover {
-            color: #343a40;
+            color: var(--primary-text);
         }
 
         .modal-content h2 {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             margin-top: 0;
-            margin-bottom: 15px;
-            font-weight: bold;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
 
         .modal-content ul {
-            padding-left: 25px;
-            margin-bottom: 20px;
+            padding-left: 30px;
+            margin-bottom: 25px;
         }
 
         .modal-content li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
 
+
         @media (min-width: 768px) {
-            .logo { font-size: 1.6rem; }
-            .hero h1 { font-size: 2.4rem; }
-            .hero p { font-size: 1.1rem; }
-            .hero-cta-btn { padding: 12px 30px; font-size: 1.1rem; }
-            .book-now-btn { padding: 10px 24px; font-size: 1rem; }
-            .section-title { font-size: 2.2rem; }
+            .logo { font-size: 1.8rem; }
+            .hero h1 { font-size: 3.5rem; }
+            .hero p { font-size: 1.3rem; }
+            .hero-cta-btn { padding: 18px 40px; font-size: 1.3rem; }
+            .book-now-btn { padding: 14px 30px; font-size: 1.2rem; }
+            .section-title { font-size: 3rem; }
             .services-grid { grid-template-columns: repeat(3, 1fr); }
-            .testimonial-card { min-width: 320px; }
-            .form-section-title { font-size: 2.4rem; }
-            .form-section-subtitle { font-size: 1.2rem; }
+            .testimonial-card { min-width: 400px; }
+            .form-section-title { font-size: 2.8rem; }
+            .form-section-subtitle { font-size: 1.3rem; }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- WhatsApp Button -->
@@ -369,31 +404,34 @@
         <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="28" alt="WhatsApp Chat">
     </a>
 
-    <!-- Form Section - NOW FIRST ELEMENT -->
-    <div class="form-container" id="bookingForm">
-        <h2 class="form-section-title">🔥 Book Your Test & Grab 60% OFF - Limited Slots! 🔥</h2>
-        <p class="form-section-subtitle">⏰ Hurry! Fill out the form NOW to secure your discounted diagnostic test appointment. Offer ends SOON!</p>
-        <iframe src="https://tally.so/r/w7MoEz" id="tallyForm" title="Diagnostic Test Booking Form"></iframe>
-    </div>
-
-    <!-- Header - Now comes AFTER the form, more like a top banner -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="logo">Health Point IND</div>
-            <!-- Header Book Now Button Removed for Form-First Approach -->
+            <a href="#bookingForm" class="book-now-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/70/70274.png" class="btn-icon" alt="Calendar Icon">
+                Book Appointment
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section - After Form & Header, now more supporting info -->
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>✅ NABL Accredited Labs | ⚡️ Same Day Reports | 🏡 Free Home Sample Collection</h1>
-        <p>Your Health, Prioritized. Get top-quality diagnostic services at unbeatable prices. Don't wait, book your test today!</p>
-        <a href="#services" class="hero-cta-btn">Explore All Services & Discounts</a>
+        <h1>Your Health, Simplified & Affordable.</h1>
+        <p>Get access to top diagnostic services with ease. Book appointments online for health checkups and tests at NABL accredited labs. Enjoy big discounts, fast reports, and free home sample collection.</p>
+        <a href="#bookingForm" class="hero-cta-btn">Book Your Diagnostic Test Now</a>
+    </div>
+
+    <!-- Booking Form Section -->
+    <div class="form-container" id="bookingForm">
+        <h2 class="form-section-title">Ready to Take the Next Step?</h2>
+        <p class="form-section-subtitle">Fill out this quick form to book your diagnostic test or health checkup. We'll get back to you shortly to confirm your appointment details.</p>
+        <iframe src="https://tally.so/r/w7MoEz" id="tallyForm" title="Diagnostic Test Booking Form"></iframe>
     </div>
 
     <!-- Services Section -->
     <section class="services-section" id="services">
-        <h2 class="section-title">🔍 Check Out Our Popular Diagnostic Services</h2>
+        <h2 class="section-title">Explore Our Wide Range of Services</h2>
         <div class="services-grid">
             <!-- Doctor Appointment -->
             <div class="service-card" onclick="scrollToForm()">
@@ -507,19 +545,19 @@
 
    <!-- Testimonials Section -->
    <section class="testimonials-section">
-    <h2 class="section-title">💯 What People Are Saying About Health Point IND</h2>
+    <h2 class="section-title">Real Stories from Our Happy Customers</h2>
     <div class="testimonials-container">
         <div class="testimonial-card">
-            <h4>Rahul Sharma - <span style="font-weight: normal;">Pune</span></h4>
-            <p>"<q>Unbelievable service! Fastest reports I've ever seen. Booking? Piece of cake. Health Point IND is now my go-to for all tests.</q>"</p>
+            <h4>Rahul Sharma</h4>
+            <p>"<q>Health Point IND made getting my tests done so easy. Quick reports and great discounts! Will definitely use again.</q>"</p>
         </div>
         <div class="testimonial-card">
-            <h4>Priya Deshpande - <span style="font-weight: normal;">Mumbai</span></h4>
-            <p>"<q>Seriously affordable and super professional.  Wasn't expecting such quality at these prices.  Impressed doesn't even cover it!</q>"</p>
+            <h4>Priya Deshpande</h4>
+            <p>"<q>Excellent service and very professional staff. The home sample collection was a lifesaver for me.</q>"</p>
         </div>
         <div class="testimonial-card">
-            <h4>Anil Patil - <span style="font-weight: normal;">Nashik</span></h4>
-            <p>"<q>Pune's best? No, India's best! From start to finish, the process was slick.  Efficient and reliable - exactly what you need in healthcare.</q>"</p>
+            <h4>Anil Patil</h4>
+            <p>"<q>Top-notch diagnostic center.  Reliable results and a very smooth booking process. Highly recommended!</q>"</p>
         </div>
     </div>
 </section>
@@ -528,7 +566,7 @@
 <!-- Footer -->
 <footer>
     <p>© 2025 Health Point IND | <a href="#" onclick="openModal('privacyModal')">Privacy Policy</a> | <a href="#" onclick="openModal('termsModal')">Terms & Conditions</a></p>
-    <p style="margin-top: 10px;">Need Help? Call Us: <a href="tel:+912012345678">+91 20 1234 5678</a> | <a href="mailto:support@healthpointind.com">support@healthpointind.com</a></p>
+    <p style="margin-top: 10px;">Need assistance? Contact us: <a href="tel:+912012345678">+91 20 1234 5678</a> | <a href="mailto:support@healthpointind.com">support@healthpointind.com</a></p>
 </footer>
 
 <!-- Modals -->
@@ -583,8 +621,8 @@
     // Smooth scroll (modified to scroll to form more smoothly and added header offset consideration)
     function scrollToForm() {
         const bookingForm = document.getElementById('bookingForm');
-        const headerHeight = document.querySelector('header').offsetHeight; // Get header height (though header is after form now)
-        const formPosition = bookingForm.offsetTop - 20; // Slightly simpler calculation
+        const headerHeight = document.querySelector('header').offsetHeight; // Get header height
+        const formPosition = bookingForm.offsetTop - headerHeight - 20; // Calculate position with offset and extra margin
 
         window.scrollTo({
             top: formPosition,
