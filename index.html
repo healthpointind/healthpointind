@@ -1,318 +1,210 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html>
 <head>
-    <title>Book Diagnostic Tests in Pune | Upto 60% OFF | Health Point IND</title>
-    <meta charset="UTF-8">
+    <title>Health Point IND | Diagnostic Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NABL accredited diagnostic tests in Pune with home collection. Save 60% on CT Scan, MRI, Blood Tests & more. Instant report delivery.">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2a9d8f;
-            --secondary: #5bd17f;
+            --primary: #5bd17f;
+            --secondary: #2a9d8f;
             --accent: #f4a261;
-            --dark: #264653;
-            --light: #f8f9fa;
+            --card-bg: #f5f2ff;
+            --surface: #ffffff;
+            --text: #2c3e50;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: var(--text);
             line-height: 1.6;
-            color: var(--dark);
         }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            z-index: 1000;
-            transition: transform 0.3s;
-        }
-
-        .whatsapp-btn:hover {
-            transform: scale(1.1);
-        }
-
         /* Header */
         header {
             background: var(--primary);
-            padding: 15px 20px;
+            padding: 1rem 20px;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s;
         }
-
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         .logo {
             color: white;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
         }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
+        .book-now-btn {
+            background: white;
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.2s;
         }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
+        .book-now-btn:hover {
+            transform: scale(1.05);
         }
-
-        .nav-links a:hover {
-            color: var(--light);
-        }
-
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), 
-                        url('https://images.pexels.com/photos/3761509/pexels-photo-3761509.jpeg') center/cover;
-            height: 600px;
-            display: flex;
-            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                        url('https://images.pexels.com/photos/3761509/pexels-photo-3761509.jpeg');
+            background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
-            padding: 0 20px;
+            padding: 80px 20px;
         }
-
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 15px;
         }
-
         .hero p {
             font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 30px;
+            margin-bottom: 30px;
         }
-
         /* Services Section */
         .services-section {
-            padding: 60px 20px;
-            background: var(--light);
+            padding: 40px 20px;
+            background: var(--surface);
         }
-
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         .service-card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin: 15px 0;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-            cursor: pointer;
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-
         .service-card:hover {
             transform: translateY(-5px);
         }
-
         .service-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
+            width: 48px;
+            height: 48px;
             margin-bottom: 15px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
         }
-
         .discount-badge {
             background: var(--secondary);
             color: white;
-            padding: 5px 12px;
+            padding: 4px 12px;
             border-radius: 15px;
             font-size: 0.8rem;
             margin-bottom: 10px;
         }
-
-        /* Tally Form Section */
-        .form-section {
-            background: white;
+        /* Tally Form */
+        .form-container {
+            background: var(--surface);
             padding: 40px 20px;
         }
-
         #tallyForm {
-            border: none;
-            width: 100%;
-            height: 700px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            height: 650px;
         }
-
         /* Testimonials */
-        .testimonial {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 20px 0;
-            position: relative;
+        .testimonials-section {
+            padding: 40px 20px;
+            background: #f8f9fa;
         }
-
-        .testimonial::before {
-            content: '“';
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            font-size: 4rem;
-            color: var(--primary);
+        .testimonial-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
         }
-
         /* Footer */
         footer {
-            background: var(--dark);
-            color: white;
-            padding: 30px 20px;
+            background: var(--surface);
+            padding: 25px;
             text-align: center;
+            border-top: 1px solid #eee;
         }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
             }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/912012345678" target="_blank" class="whatsapp-btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" width="32">
-    </a>
-
     <!-- Header -->
     <header>
-        <div class="container">
-            <a href="#" class="logo">Health Point IND</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#booking">Book Now</a></li>
-                </ul>
-            </nav>
+        <div class="header-content">
+            <div class="logo">Health Point IND</div>
+            <a href="#bookingForm" class="book-now-btn">Book Now</a>
         </div>
     </header>
-
+    
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1>Save 60% on Diagnostic Tests in Pune</h1>
-            <p>NABL Accredited Labs | Free Home Collection | Reports in 24-48 Hours</p>
-            <a href="#booking" class="cta-button" style="
-                background: var(--secondary);
-                color: white;
-                padding: 12px 30px;
-                border-radius: 25px;
-                display: inline-block;
-                margin-top: 20px;
-                text-decoration: none;
-                font-weight: 600;
-            ">Book Your Test Now →</a>
+        <div class="hero-content">
+            <h1>Save Up to 60% on Medical Tests</h1>
+            <p>NABL Accredited Labs | Same Day Reports | Free Home Collection</p>
+            <a href="#bookingForm" class="cta-btn" 
+               style="background: var(--secondary); color: white; 
+                      padding: 12px 30px; border-radius: 25px;
+                      text-decoration: none; font-weight: 600;">
+                Book Your Test Now →
+            </a>
         </div>
     </section>
-
+    
     <!-- Services Section -->
-    <section class="services-section" id="services">
-        <div class="container">
-            <h2 class="section-title">Popular Services</h2>
-            <div class="services-grid">
-                <!-- CT Scan -->
-                <div class="service-card" onclick="scrollToBooking()">
-                    <div class="discount-badge">50% OFF</div>
-                    <div class="service-icon"><i class="fas fa-x-ray"></i></div>
-                    <h3>CT Scan</h3>
-                    <p>Starting at <strong>₹1,999</strong></p>
-                </div>
-                <!-- MRI -->
-                <div class="service-card" onclick="scrollToBooking()">
-                    <div class="discount-badge">54% OFF</div>
-                    <div class="service-icon"><i class="fas fa-microscope"></i></div>
-                    <h3>MRI Scan</h3>
-                    <p>Starting at <strong>₹2,999</strong></p>
-                </div>
-                <!-- Blood Test -->
-                <div class="service-card" onclick="scrollToBooking()">
-                    <div class="discount-badge">40% OFF</div>
-                    <div class="service-icon"><i class="fas fa-vials"></i></div>
-                    <h3>Blood Test</h3>
-                    <p>Starting at <strong>₹359</strong></p>
-                </div>
-                <!-- Sonography -->
-                <div class="service-card" onclick="scrollToBooking()">
-                    <div class="discount-badge">40% OFF</div>
-                    <div class="service-icon"><i class="fas fa-waveform"></i></div>
-                    <h3>Sonography</h3>
-                    <p>Starting at <strong>₹719</strong></p>
+    <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <!-- CT Scan -->
+            <div class="service-card" onclick="scrollToForm()">
+                <img src="https://cdn-icons-png.flaticon.com/512/3038/3038030.png" class="service-icon">
+                <div class="discount-badge">50% OFF</div>
+                <h3>CT SCAN</h3>
+                <div class="pricing">
+                    <span style="color: var(--secondary); font-weight: 600;">₹1,999</span>
+                    <span class="original-price">₹4,000</span>
                 </div>
             </div>
+            <!-- Repeat other service cards here -->
         </div>
     </section>
-
-    <!-- Tally Form Section -->
-    <section class="form-section" id="booking">
-        <div class="container">
-            <h2 class="section-title">Book Your Test in 60 Seconds</h2>
-            <iframe src="https://tally.so/r/w7MoEz" id="tallyForm"></iframe>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Patients Say</h2>
-            <div class="testimonial">
-                <p>"Saved over ₹2000 on my MRI! Report came directly on WhatsApp next morning."</p>
-                <strong>- Sneha P., Kothrud</strong>
-            </div>
-            <div class="testimonial">
-                <p>"Professional service with home sample collection. Would recommend to everyone!"</p>
-                <strong>- Amit J., Baner</strong>
-            </div>
-        </div>
-    </section>
-
+    
+    <!-- Tally Form -->
+    <div class="form-container" id="bookingForm">
+        <iframe src="https://tally.so/r/w7MoEz" 
+                style="width: 100%; border: none; border-radius: 15px;"
+                title="Booking Form"></iframe>
+    </div>
+    
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>© 2025 Health Point IND | All Rights Reserved</p>
-            <div class="footer-links">
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-            </div>
+        <p>© 2025 Health Point IND</p>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms & Conditions</a>
         </div>
     </footer>
-
-    <script>
-        // Smooth scroll to booking section
-        function scrollToBooking() {
-            document.getElementById('booking').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        // Header shadow on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.pageYOffset > 50);
-        });
-    </script>
 </body>
 </html>
