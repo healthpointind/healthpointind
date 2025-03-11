@@ -8,7 +8,6 @@
         :root {
             --primary: #5bd17f;
             --secondary: #2a9d8f;
-            --accent: #f4a261;
             --card-bg: #f5f2ff;
             --surface: #ffffff;
             --text: #2c3e50;
@@ -26,7 +25,6 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            transition: all 0.3s;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .header-content {
@@ -61,7 +59,6 @@
             padding: 8px 20px;
             border-radius: 25px;
             font-weight: 500;
-            transition: transform 0.2s;
         }
         /* Hero Section */
         .hero {
@@ -77,21 +74,17 @@
             font-size: 2.5rem;
             margin-bottom: 15px;
         }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
         /* Tally Form */
         .form-container {
-            background: var(--surface);
             padding: 40px 20px;
         }
         #tallyForm {
-            border: 2px solid #f0f0f0;
+            width: 100%;
+            min-height: 800px;
+            border: none;
             border-radius: 15px;
             max-width: 1200px;
             margin: 0 auto;
-            min-height: 700px;
         }
         /* Services Section */
         .services-section {
@@ -118,19 +111,6 @@
             height: 48px;
             margin-bottom: 15px;
         }
-        .discount-badge {
-            background: var(--secondary);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-        }
-        /* Testimonials */
-        .testimonials-section {
-            padding: 40px 20px;
-            background: #f8f9fa;
-        }
         /* Footer */
         footer {
             background: var(--surface);
@@ -155,14 +135,11 @@
         }
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
             .services-grid {
                 grid-template-columns: 1fr;
             }
             #tallyForm {
-                min-height: 600px;
+                min-height: 700px;
             }
         }
     </style>
@@ -191,7 +168,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Save Up to 60% on Medical Tests</h1>
-            <p>Trusted by 10,000+ Pune Residents | NABL Certified Labs | Reports in 6-12 Hours</p>
+            <p>NABL Accredited Labs | Reports in 6-12 Hours | Free Home Collection</p>
             <a href="#bookingForm" class="cta-btn" 
                style="background: var(--secondary); color: white; 
                       padding: 12px 30px; border-radius: 25px;
