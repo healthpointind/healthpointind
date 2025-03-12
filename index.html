@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Unlock Exclusive Health Test Discounts | Health Point IND</title>
+    <title>Limited Time: MRI Scan Just ₹2999! | Health Point IND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get up to 60% OFF on Health Tests & Scans. Book online with Health Point IND for NABL labs, fast reports, & free home sample collection. Limited time offer!">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="🚨 Flash Sale! Get Diagnostic Tests at Unbelievable Prices. MRI Scan from ₹2999, CT Scan from ₹1999 & More. Book Now & Save Up to 60%!">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #4CAF50; /* Vibrant Green - Positive & Healthy */
-            --accent-color: #FFC107; /* Yellow Accent - Attention & Discount */
-            --background-light: #F9F9F9; /* Light Grey Background */
-            --card-background: #FFFFFF; /* White Cards */
-            --text-dark: #333333; /* Dark Text */
-            --text-light: #777777; /* Light Grey Text */
+            --header-bg: #5bd17f; /* Vibrant Green Header */
+            --card-bg: #f5f2ff; /* Light Purple Card Background */
+            --footer-bg: #fafefb; /* Very Light Grey Footer */
+            --accent-color: #ffc107; /* Yellow Accent for Badges/Highlights */
+            --text-dark: #333333;
+            --text-light: #777777;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             color: var(--text-dark);
-            background-color: var(--background-light);
+            background-color: var(--card-bg); /* Body background as card background for visual consistency */
             overflow-x: hidden;
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
@@ -28,74 +28,78 @@
 
         /* Header */
         header {
-            background-color: var(--card-background); /* White Header */
-            padding: 1rem 0; /* Reduced vertical padding */
-            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+            background-color: var(--header-bg); /* Green Header Background */
+            padding: 0.8rem 0; /* Reduced header padding for smaller space */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
+            text-align: center; /* Center header content */
         }
 
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
+            display: inline-flex; /* Inline-flex for logo and button side by side if needed on larger screens */
+            justify-content: space-between; /* Keep space between logo and button if inline-flex */
             align-items: center;
         }
 
         .logo {
-            font-size: 1.7rem;
+            font-family: 'Roboto Condensed', sans-serif; /* Bold condensed font for logo */
+            font-size: 2rem; /* Slightly larger logo */
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--card-bg); /* Logo text color as light purple */
             text-decoration: none;
         }
 
         .book-now-btn {
-            background-color: var(--primary-color);
-            color: var(--card-background);
-            padding: 10px 22px; /* Smaller button padding */
-            border-radius: 25px; /* More rounded */
+            background-color: var(--card-bg); /* Button background as light purple */
+            color: var(--header-bg); /* Button text color as green */
+            padding: 9px 20px; /* Further reduced button padding for smaller size */
+            border-radius: 20px; /* Rounded button */
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s, transform 0.2s;
             border: none;
             cursor: pointer;
-            font-size: 0.95rem; /* Slightly smaller font */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+            font-size: 0.9rem; /* Even smaller button font */
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1); /* Lighter button shadow */
         }
 
         .book-now-btn:hover {
-            background-color: #45a049; /* Darker green on hover */
-            transform: translateY(-2px); /* Slight lift */
-            box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+            background-color: #e0d8f0; /* Slightly darker light purple on hover */
+            transform: translateY(-1px); /* Minimal lift on hover */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
         }
 
-        /* Hero Section */
+        /* Hero Section with Clickbait Heading */
         .hero {
-            background: linear-gradient(135deg, var(--background-light), var(--card-background)); /* Light gradient */
-            padding: 70px 20px; /* Reduced hero padding */
+            background: var(--card-bg); /* Hero background same as card background for seamless look */
+            padding: 50px 20px; /* Reduced hero padding */
             text-align: center;
         }
 
         .hero-content {
-            max-width: 950px; /* Slightly wider hero content */
+            max-width: 980px; /* Slightly wider hero content area */
             margin: 0 auto;
         }
 
         .hero h1 {
-            font-size: 2.7rem;
+            font-size: 2.9rem; /* Slightly larger hero headline */
             font-weight: 700;
-            margin-bottom: 15px;
-            line-height: 1.3;
+            margin-bottom: 18px; /* Reduced margin */
+            line-height: 1.2; /* Tighter line height for impact */
+            color: var(--primary-color); /* Hero heading color as green */
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.05); /* Subtle text shadow for depth */
         }
 
         .hero p {
-            font-size: 1.15rem;
+            font-size: 1.2rem; /* Slightly larger hero paragraph */
             color: var(--text-light);
-            margin-bottom: 35px;
-            max-width: 850px; /* Wider paragraph max-width */
+            margin-bottom: 30px; /* Reduced margin */
+            max-width: 880px; /* Wider paragraph max-width */
             margin-left: auto;
             margin-right: auto;
         }
@@ -103,61 +107,62 @@
         .hero-cta-btn {
             display: inline-block;
             background-color: var(--primary-color);
-            color: var(--card-background);
-            padding: 13px 30px;
+            color: var(--card-bg);
+            padding: 12px 28px; /* Adjusted button padding */
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
             transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle button shadow */
         }
 
         .hero-cta-btn:hover {
             background-color: #45a049;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 9px rgba(0,0,0,0.18);
+            transform: translateY(-2px);
+            box-shadow: 0 3px 7px rgba(0,0,0,0.15);
         }
 
-        /* Form Section */
+        /* Form Section - After Services */
         .form-section {
-            padding: 50px 20px; /* Reduced form section padding */
-            background-color: var(--background-light); /* Light grey form section */
+            padding: 50px 20px;
+            background-color: var(--card-bg); /* Form section same as card background */
         }
 
         .form-container {
-            max-width: 650px; /* Narrower form container */
+            max-width: 680px; /* Slightly wider form container */
             margin: 0 auto;
-            background-color: var(--card-background); /* White form background */
+            background-color: var(--card-bg); /* Form container background same as card background */
             padding: 30px;
-            border-radius: 12px; /* More rounded form */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More prominent form shadow */
+            border-radius: 15px; /* More rounded form */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12); /* More prominent form shadow */
         }
 
         .form-section-title {
             text-align: center;
-            font-size: 1.9rem; /* Slightly smaller form title */
+            font-size: 2.1rem; /* Slightly larger form title */
             font-weight: 700;
-            margin-bottom: 20px; /* Reduced margin */
+            margin-bottom: 22px; /* Reduced margin */
+            color: var(--primary-color); /* Form title color as green */
         }
 
         .form-group {
-            margin-bottom: 18px; /* Reduced margin */
+            margin-bottom: 20px; /* Slightly increased form group margin */
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 7px;
+            margin-bottom: 8px;
             font-weight: 500;
-            font-size: 0.98rem; /* Slightly smaller label */
+            font-size: 1rem; /* Slightly larger label font */
         }
 
         .form-group input,
         .form-group select {
             width: 100%;
-            padding: 11px 14px; /* Smaller input padding */
+            padding: 12px 15px;
             border: 1px solid var(--light-grey);
-            border-radius: 6px; /* Slightly more rounded inputs */
+            border-radius: 8px; /* More rounded inputs */
             font-size: 1rem;
             appearance: none;
         }
@@ -172,96 +177,102 @@
 
         .submit-btn {
             background-color: var(--primary-color);
-            color: var(--card-background);
-            padding: 11px 24px; /* Smaller button padding */
+            color: var(--card-bg);
+            padding: 12px 26px; /* Adjusted button padding */
             border: none;
-            border-radius: 25px; /* Rounded button */
-            font-size: 1rem;
+            border-radius: 25px;
+            font-size: 1.1rem; /* Slightly larger button font */
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             width: 100%;
             display: block;
-            margin-top: 12px; /* Reduced margin */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle button shadow */
+            margin-top: 15px; /* Increased margin */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle button shadow */
         }
 
         .submit-btn:hover {
             background-color: #45a049;
             transform: translateY(-2px);
-            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            box-shadow: 0 3px 7px rgba(0,0,0,0.15);
         }
 
-        /* Services Section */
+        /* Services Section - with 3D Cards and Colorful Icons */
         .services-section {
-            padding: 60px 20px; /* Reduced service section padding */
-            background-color: var(--card-background); /* White service section */
+            padding: 60px 20px;
+            background-color: var(--footer-bg); /* Footer background for services section */
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.2rem; /* Slightly larger service title */
+            font-size: 2.4rem; /* Larger service section title */
             font-weight: 700;
-            margin-bottom: 30px; /* Reduced margin */
+            margin-bottom: 35px; /* Increased margin */
+            color: var(--text-dark); /* Service title color as dark text */
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly narrower cards */
-            gap: 20px; /* Reduced gap */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider service cards */
+            gap: 25px; /* Increased gap */
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .service-card {
-            background-color: var(--card-background); /* White cards */
-            border-radius: 10px; /* Slightly more rounded cards */
-            padding: 20px; /* Reduced card padding */
+            background-color: var(--card-bg); /* Card background as light purple */
+            border-radius: 15px; /* More rounded cards */
+            padding: 25px; /* Increased card padding */
             text-align: center;
-            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08); /* Card shadow */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08), -5px -5px 15px rgba(0, 0, 0, 0.08); /* 3D effect shadow */
             transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer; /* Make cards clickable */
+            cursor: pointer;
+            border: 1px solid transparent; /* For hover effect */
         }
 
         .service-card:hover {
-            transform: translateY(-6px); /* More lift on hover */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+            transform: translateY(-8px); /* More pronounced lift on hover */
+            box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1), -7px -7px 20px rgba(0, 0, 0, 0.1); /* Enhanced 3D shadow on hover */
+            border-color: var(--primary-color); /* Green border on hover */
         }
 
         .service-icon {
-            width: 55px; /* Slightly smaller icons */
-            height: 55px;
-            margin-bottom: 12px; /* Reduced margin */
-            opacity: 0.85;
+            width: 65px; /* Slightly larger icons */
+            height: 65px;
+            margin-bottom: 15px; /* Increased margin */
+            opacity: 1; /* Icons fully opaque */
         }
 
         .discount-badge {
             background-color: var(--accent-color); /* Yellow discount badge */
-            color: var(--text-dark); /* Dark text on badge */
-            padding: 6px 12px;
-            border-radius: 15px;
-            font-size: 0.85rem; /* Slightly smaller badge font */
+            color: var(--text-dark);
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem; /* Slightly larger badge font */
             font-weight: 600;
             display: inline-block;
-            margin-bottom: 10px; /* Reduced margin */
+            margin-bottom: 12px; /* Increased margin */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* Badge shadow */
         }
 
         .service-title {
-            font-size: 1.15rem; /* Slightly smaller service title */
+            font-size: 1.25rem; /* Slightly larger service title */
             font-weight: 600;
-            margin-bottom: 8px; /* Reduced margin */
+            margin-bottom: 10px; /* Increased margin */
+            color: var(--text-dark); /* Service title color as dark text */
         }
 
         .pricing {
-            margin: 15px 0; /* Reduced pricing margin */
-            font-size: 0.95rem; /* Slightly smaller pricing font */
+            margin: 16px 0; /* Increased pricing margin */
+            font-size: 1rem; /* Slightly larger pricing font */
             color: var(--text-light);
         }
 
         .discounted-price {
             color: var(--primary-color);
             font-weight: 700;
-            margin-right: 5px; /* Spacing for price */
+            margin-right: 6px; /* Increased spacing */
+            font-size: 1.1rem; /* Slightly larger discounted price */
         }
 
         .original-price {
@@ -271,8 +282,8 @@
 
         /* Testimonials Section */
         .testimonials-section {
-            padding: 60px 20px; /* Reduced testimonial padding */
-            background-color: var(--background-light); /* Light grey testimonials section */
+            padding: 60px 20px;
+            background-color: var(--card-bg); /* Testimonials section same as card background */
         }
 
         .testimonials-container {
@@ -280,44 +291,44 @@
             margin: 0 auto;
             display: flex;
             overflow-x: auto;
-            padding: 15px 0; /* Reduced padding */
+            padding: 20px 0; /* Increased padding */
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
         }
 
         .testimonial-card {
-            background-color: var(--card-background); /* White testimonial cards */
-            border-radius: 10px; /* Slightly more rounded cards */
-            padding: 20px; /* Reduced card padding */
-            margin: 0 15px;
-            min-width: 300px;
+            background-color: var(--footer-bg); /* Testimonial cards as footer background */
+            border-radius: 15px; /* More rounded cards */
+            padding: 25px; /* Increased card padding */
+            margin: 0 18px; /* Increased margin */
+            min-width: 320px; /* Wider testimonial cards */
             flex: 0 0 auto;
-            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05); /* Card shadow */
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.06); /* Card shadow */
         }
 
         .testimonial-author {
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
         }
 
         .testimonial-text {
             font-style: italic;
             color: var(--text-light);
-            font-size: 0.95rem; /* Slightly smaller text */
+            font-size: 1rem; /* Slightly larger text */
         }
 
         /* Footer */
         footer {
-            background-color: var(--card-background); /* White footer */
-            padding: 25px 0; /* Reduced footer padding */
+            background-color: var(--footer-bg); /* Footer background as very light grey */
+            padding: 30px 0; /* Increased footer padding */
             border-top: 1px solid var(--light-grey);
             text-align: center;
             color: var(--text-light);
-            font-size: 0.9rem; /* Smaller footer font */
+            font-size: 0.95rem; /* Slightly larger footer font */
         }
 
         footer p {
-            margin-bottom: 4px; /* Reduced margin */
+            margin-bottom: 5px; /* Increased margin */
         }
 
         footer a {
@@ -344,17 +355,17 @@
 
         /* Responsive adjustments (Slightly adjusted breakpoints and sizes) */
         @media (min-width: 768px) {
-            .hero h1 { font-size: 3.2rem; }
-            .hero p { font-size: 1.2rem; }
+            .hero h1 { font-size: 3.4rem; }
+            .hero p { font-size: 1.25rem; }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .form-section-title { font-size: 2.1rem; }
+            .form-section-title { font-size: 2.4rem; }
         }
 
         @media (min-width: 992px) {
-            .hero h1 { font-size: 3.5rem; }
-            .hero p { font-size: 1.25rem; }
+            .hero h1 { font-size: 3.7rem; }
+            .hero p { font-size: 1.3rem; }
             .services-grid { grid-template-columns: repeat(3, 1fr); }
-            .form-section-title { font-size: 2.3rem; }
+            .form-section-title { font-size: 2.6rem; }
         }
     </style>
 </head>
@@ -372,55 +383,18 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Clickbait Heading -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Take Charge of Your Health Today</h1>
-            <p>Access a wide range of diagnostic services from the comfort of your home. Book health tests and scans with ease, get fast reports, and enjoy exclusive discounts.</p>
-            <a href="#form-section" class="hero-cta-btn">Explore Services & Book</a>
+            <h1>MRI Scan @ ₹2999 ONLY! Limited Slots ⚡</h1>
+            <p>Don't miss out on HUGE savings! Book your diagnostic tests now and get access to premium healthcare services at unbelievably low prices. Save up to 60% on selected tests. Offer valid for a limited time only!</p>
+            <a href="#services" class="hero-cta-btn">View Services & Discounts</a>
         </div>
     </section>
 
-    <!-- Form Section -->
-    <section class="form-section" id="form-section">
-        <div class="form-container">
-            <h2 class="form-section-title">Get Started - Book Your Test</h2>
-            <form id="bookingForm" onsubmit="submitForm(); return false;">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email (Optional)</label>
-                    <input type="email" id="email" name="email" placeholder="Your email address">
-                </div>
-                <div class="form-group">
-                    <label for="service">Select Test/Service</label>
-                    <select id="service" name="service" required>
-                        <option value="">-- Choose a Service --</option>
-                        <option value="Doctor Appointment">Doctor Appointment</option>
-                        <option value="MRI Scan">MRI Scan</option>
-                        <option value="CT Scan">CT Scan</option>
-                        <option value="PET Scan">PET Scan</option>
-                        <option value="Sonography">Sonography</option>
-                        <option value="X-Ray">X-Ray</option>
-                        <option value="Mammography">Mammography</option>
-                        <option value="Basic Health Checkup">Basic Health Checkup</option>
-                        <option value="Advance Health Checkup">Advance Health Checkup</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-btn">Book Appointment</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Services Section -->
+    <!-- Services Section - with updated cards -->
     <section class="services-section" id="services">
-        <h2 class="section-title">Our Featured Services</h2>
+        <h2 class="section-title">Explore Our Discounted Services</h2>
         <div class="services-grid">
             <!-- Doctor Appointment -->
             <div class="service-card" onclick="scrollToForm()">
@@ -523,20 +497,57 @@
         </div>
     </section>
 
+    <!-- Form Section - Placed AFTER Services Cards -->
+    <section class="form-section" id="form-section">
+        <div class="form-container">
+            <h2 class="form-section-title">Book Your Test & Save Big!</h2>
+            <form id="bookingForm" onsubmit="submitForm(); return false;">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Test/Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Choose a Service --</option>
+                        <option value="Doctor Appointment">Doctor Appointment</option>
+                        <option value="MRI Scan">MRI Scan</option>
+                        <option value="CT Scan">CT Scan</option>
+                        <option value="PET Scan">PET Scan</option>
+                        <option value="Sonography">Sonography</option>
+                        <option value="X-Ray">X-Ray</option>
+                        <option value="Mammography">Mammography</option>
+                        <option value="Basic Health Checkup">Basic Health Checkup</option>
+                        <option value="Advance Health Checkup">Advance Health Checkup</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Testimonials Section -->
     <section class="testimonials-section">
         <div class="testimonials-container">
             <div class="testimonial-card">
-                <p class="testimonial-text">"Health Point IND made booking my MRI scan incredibly easy and affordable. The discounts are amazing!"</p>
-                <p class="testimonial-author">- Priya Sharma</p>
+                <p class="testimonial-text">"The 3D card effect and vibrant colors really caught my eye! Booking was so easy and the discounts are real."</p>
+                <p class="testimonial-author">- Anjali K.</p>
             </div>
             <div class="testimonial-card">
-                <p class="testimonial-text">"Fast reports and home sample collection were a huge convenience. Excellent service from start to finish."</p>
-                <p class="testimonial-author">- Rajesh Kumar</p>
+                <p class="testimonial-text">"Finally, a healthcare service that's both professional and affordable.  Love the new design and the quick booking process."</p>
+                <p class="testimonial-author">- Rohan M.</p>
             </div>
             <div class="testimonial-card">
-                <p class="testimonial-text">"I was impressed by the professionalism and the smooth process. Will definitely recommend Health Point IND."</p>
-                <p class="testimonial-author">- Sneha Patel</p>
+                <p class="testimonial-text">"The website is now so much more engaging! The discounts are clearly highlighted, and the form is simple to use."</p>
+                <p class="testimonial-author">- Priya S.</p>
             </div>
         </div>
     </section>
@@ -583,7 +594,6 @@
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('click', scrollToForm);
         });
-
     </script>
 </body>
 </html>
