@@ -7,34 +7,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --header-bg: #ffffff; /* White Header - Like Target Page */
+            --header-bg: #ffffff; /* White Header */
             --card-bg: #f5f2ff;
-            --footer-bg: #f0f0f0; /* Light Grey Footer - Like Target Page */
-            --accent-color: #00bcd4; /* Cyan Accent - Keeping a vibrant accent */
-            --primary-color: #2962ff; /* Blue Primary Color - Modern and Clean */
-            --text-dark: #2d3748; /* Dark Grey Text - Readable and Professional */
-            --text-light: #718096; /* Light Grey Text */
+            --footer-bg: #f0f0f0;
+            --accent-color: #00bcd4;
+            --primary-color: #2962ff;
+            --text-dark: #2d3748;
+            --text-light: #718096;
         }
 
         body {
-            font-family: 'Sora', sans-serif; /* Sora Font - Clean and Modern, Like Target Page */
+            font-family: 'Sora', sans-serif;
             margin: 0;
             color: var(--text-dark);
             background-color: var(--card-bg);
             overflow-x: hidden;
-            line-height: 1.6; /* Slightly reduced line height for cleaner look */
+            line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Header - Smaller Header */
+        /* Header - Even Smaller and Slightly "Catchy" */
         header {
             background-color: var(--header-bg); /* White Header */
-            padding: 1rem 0; /* Reduced vertical padding from 1.5rem to 1rem */
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04); /* Very subtle shadow */
+            padding: 0.7rem 0; /* Further reduced vertical padding to 0.7rem */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Even lighter shadow */
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 1px solid #eee; /* Very light bottom border for subtle definition */
         }
 
         .header-content {
@@ -47,36 +48,36 @@
         }
 
         .logo {
-            font-size: 1.7rem; /* Logo size - kept same */
-            font-weight: 700; /* Bold logo */
-            color: var(--primary-color); /* Blue Logo Color */
+            font-size: 1.6rem; /* Slightly smaller logo font size */
+            font-weight: 700;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
         .book-now-btn {
-            background-color: var(--primary-color); /* Blue Button */
-            color: var(--header-bg); /* White Button Text */
-            padding: 10px 22px; /* Reduced button padding from 12px 25px to 10px 22px */
-            border-radius: 8px; /* Slightly less rounded button */
+            background-color: var(--primary-color);
+            color: var(--header-bg);
+            padding: 8px 18px; /* Further reduced button padding to 8px 18px */
+            border-radius: 6px; /* Slightly less rounded button */
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s, transform 0.2s;
             border: none;
             cursor: pointer;
-            font-size: 0.95rem; /* Slightly smaller font - kept same */
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle button shadow */
+            font-size: 0.9rem; /* Slightly smaller button font size */
+            box-shadow: none; /* Removed button shadow for flatter design */
         }
 
         .book-now-btn:hover {
-            background-color: #1a45b3; /* Darker blue on hover */
-            transform: translateY(-2px);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            background-color: #1a45b3;
+            transform: translateY(-1px); /* Minimal lift on hover */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Very subtle shadow on hover */
         }
 
-        /* Hero Section - Heading style updated to match target page */
+        /* Hero Section - No changes */
         .hero {
             background-color: var(--card-bg);
-            padding: 100px 20px; /* Hero padding kept same */
+            padding: 100px 20px;
             text-align: center;
         }
 
@@ -86,18 +87,18 @@
         }
 
         .hero h1 {
-            font-size: 3.2rem; /* Heading size - kept same */
-            font-weight: 700; /* Bold heading */
+            font-size: 3.2rem;
+            font-weight: 700;
             margin-bottom: 20px;
             line-height: 1.2;
-            color: var(--text-dark); /* Dark text color for heading */
-            letter-spacing: -0.02em; /* Slightly tighter letter spacing - like target page */
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
         }
 
         .hero p {
-            font-size: 1.2rem; /* Paragraph size - kept same */
+            font-size: 1.2rem;
             color: var(--text-light);
-            margin-bottom: 40px; /* Increased margin - kept same */
+            margin-bottom: 40px;
             max-width: 850px;
             margin-left: auto;
             margin-right: auto;
@@ -107,11 +108,11 @@
             display: inline-block;
             background-color: var(--primary-color);
             color: var(--header-bg);
-            padding: 14px 32px; /* Button padding - kept same */
-            border-radius: 8px; /* Button border-radius - kept same */
+            padding: 14px 32px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem; /* Font size - kept same */
+            font-size: 1.1rem;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -122,7 +123,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
 
-        /* Form Section - No changes needed here */
+        /* Form Section - No changes */
         .form-section {
             padding: 60px 20px;
             background-color: var(--card-bg);
@@ -196,7 +197,7 @@
             box-shadow: 0 3px 7px rgba(0,0,0,0.15);
         }
 
-        /* Services Section - No changes needed here */
+        /* Services Section - No changes */
         .services-section {
             padding: 60px 20px;
             background-color: var(--footer-bg);
@@ -279,7 +280,7 @@
             color: var(--text-light);
         }
 
-        /* Testimonials Section - No changes needed here */
+        /* Testimonials Section - No changes */
         .testimonials-section {
             padding: 60px 20px;
             background-color: var(--card-bg);
@@ -316,7 +317,7 @@
             font-size: 1rem;
         }
 
-        /* Footer - No changes needed here */
+        /* Footer - No changes */
         footer {
             background-color: var(--footer-bg); /* Light grey footer */
             padding: 25px 0; /* Reduced footer padding */
