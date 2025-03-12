@@ -7,17 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --header-bg: #ffffff;
+            --header-bg: #5bd17f; /* Original Header Background Color */
             --card-bg: #f5f2ff;
-            --footer-bg: #f0f0f0;
-            --accent-color: #00bcd4;
-            --primary-color: #2962ff;
-            --text-dark: #2d3748;
-            --text-light: #718096;
+            --footer-bg: #fafefb;
+            --accent: #2a9d8f; /* Original Accent Color */
+            --text-dark: #2c3e50; /* Original Dark Text Color */
         }
 
         body {
-            font-family: 'Sora', sans-serif;
+            font-family: 'Sora', sans-serif; /* Keeping Sora font for body */
             margin: 0;
             color: var(--text-dark);
             background-color: var(--card-bg);
@@ -27,57 +25,51 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Header - Small Header */
+        /* Header - Reverted to Original Styling */
         header {
-            background-color: var(--header-bg);
-            padding: 0.7rem 0; /* Even smaller vertical padding */
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            background: var(--header-bg); /* Original Header Background */
+            padding: 1rem; /* Original Header Padding */
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Original Header Shadow */
         }
 
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 15px; /* Original Header Content Padding */
         }
 
         .logo {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
+            color: white; /* Original Logo Color */
+            font-size: 1.4rem; /* Original Logo Font Size */
+            font-weight: bold; /* Original Logo Font Weight */
         }
 
         .book-now-btn {
-            background-color: var(--primary-color);
-            color: var(--header-bg);
-            padding: 8px 18px;
-            border-radius: 6px;
+            background: white; /* Original Button Background */
+            color: var(--header-bg); /* Original Button Text Color */
+            padding: 8px 20px; /* Original Button Padding */
+            border-radius: 20px; /* Original Button Border Radius */
             text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
-            border: none;
-            cursor: pointer;
-            font-size: 0.9rem;
-            box-shadow: none;
+            font-weight: bold; /* Original Button Font Weight */
+            font-size: 0.9rem; /* Original Button Font Size */
+            transition: all 0.3s; /* Original Button Transition */
         }
 
-        .book-now-btn:hover {
-            background-color: #1a45b3;
-            transform: translateY(-1px);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        .book-now-btn:hover { /* Kept Hover Effect for Consistency */
+            background-color: #e0e0e0; /* Light grey on hover - you can adjust this */
         }
 
-        /* Hero Section - Smaller Heading Area */
+
+        /* Hero Section - Keeping Latest Hero Section */
         .hero {
             background-color: var(--card-bg);
-            padding: 60px 20px; /* Reduced hero padding from 100px to 60px */
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -87,18 +79,18 @@
         }
 
         .hero h1 {
-            font-size: 2.6rem; /* Slightly smaller heading font size */
+            font-size: 2.6rem;
             font-weight: 700;
-            margin-bottom: 15px; /* Reduced margin below heading */
+            margin-bottom: 15px;
             line-height: 1.2;
             color: var(--text-dark);
             letter-spacing: -0.02em;
         }
 
         .hero p {
-            font-size: 1.1rem; /* Slightly smaller paragraph font size */
+            font-size: 1.1rem;
             color: var(--text-light);
-            margin-bottom: 30px; /* Reduced margin below paragraph */
+            margin-bottom: 30px;
             max-width: 850px;
             margin-left: auto;
             margin-right: auto;
@@ -106,7 +98,7 @@
 
         .hero-cta-btn {
             display: inline-block;
-            background-color: var(--primary-color);
+            background-color: var(--primary-color); /* Keeping Blue CTA Button */
             color: var(--header-bg);
             padding: 12px 28px;
             border-radius: 8px;
@@ -123,7 +115,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
 
-        /* Form Section - No changes */
+        /* Form Section - Keeping Latest Form Section */
         .form-section {
             padding: 60px 20px;
             background-color: var(--card-bg);
@@ -197,7 +189,7 @@
             box-shadow: 0 3px 7px rgba(0,0,0,0.15);
         }
 
-        /* Services Section - No changes */
+        /* Services Section - Keeping Latest Services Section */
         .services-section {
             padding: 60px 20px;
             background-color: var(--footer-bg);
@@ -244,8 +236,8 @@
         }
 
         .discount-badge {
-            background-color: var(--accent-color);
-            color: var(--header-bg);
+            background-color: var(--accent); /* Keeping Original Accent Color for Badges */
+            color: white; /* Keeping White Text for Badges */
             padding: 7px 14px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -269,7 +261,7 @@
         }
 
         .discounted-price {
-            color: var(--primary-color);
+            color: var(--accent); /* Keeping Original Accent Color for Discounted Price */
             font-weight: 700;
             margin-right: 6px;
             font-size: 1.1rem;
@@ -280,7 +272,7 @@
             color: var(--text-light);
         }
 
-        /* Testimonials Section - No changes */
+        /* Testimonials Section - Keeping Latest Testimonials Section */
         .testimonials-section {
             padding: 60px 20px;
             background-color: var(--card-bg);
@@ -317,11 +309,11 @@
             font-size: 1rem;
         }
 
-        /* Footer - No changes */
+        /* Footer - Keeping Latest Footer */
         footer {
-            background-color: var(--footer-bg); /* Light grey footer */
-            padding: 25px 0; /* Reduced footer padding */
-            border-top: none; /* No top border - like target page */
+            background-color: var(--footer-bg);
+            padding: 25px 0;
+            border-top: none;
             text-align: center;
             color: var(--text-light);
             font-size: 0.9rem;
@@ -353,7 +345,7 @@
             z-index: 1000;
         }
 
-        /* Responsive adjustments (Slightly adjusted breakpoints and sizes) */
+        /* Responsive adjustments (Slightly adjusted breakpoints and sizes) - Keeping Responsive Styles */
         @media (min-width: 768px) {
             .hero h1 { font-size: 3.6rem; }
             .hero p { font-size: 1.25rem; }
@@ -375,15 +367,15 @@
         <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="28" alt="WhatsApp Chat">
     </a>
 
-    <!-- Header -->
+    <!-- Header - Reverted to Original Styling -->
     <header>
         <div class="header-content">
-            <a href="#" class="logo">Health Point IND</a>
+            <div class="logo">Health Point IND</div>
             <a href="#form-section" class="book-now-btn">Book Now</a>
         </div>
     </header>
 
-    <!-- Hero Section - Heading style updated with discount and urgency -->
+    <!-- Hero Section - Keeping Latest Hero Section Content -->
     <section class="hero">
         <div class="hero-content">
             <h1>Limited Time Offer: Diagnostic Tests at Discounted Prices!</h1>
@@ -392,7 +384,7 @@
         </div>
     </section>
 
-    <!-- Services Section - No changes needed here -->
+    <!-- Services Section - Keeping Latest Services Section Content -->
     <section class="services-section" id="services">
         <h2 class="section-title">Our Diagnostic Services</h2>
         <div class="services-grid">
@@ -497,7 +489,7 @@
         </div>
     </section>
 
-    <!-- Form Section - Placed AFTER Services Cards -->
+    <!-- Form Section - Keeping Latest Form Section Content -->
     <section class="form-section" id="form-section">
         <div class="form-container">
             <h2 class="form-section-title">Ready to Book Your Test?</h2>
@@ -534,7 +526,7 @@
         </div>
     </section>
 
-    <!-- Testimonials Section - No changes here -->
+    <!-- Testimonials Section - Keeping Latest Testimonials Section Content -->
     <section class="testimonials-section">
         <div class="testimonials-container">
             <div class="testimonial-card">
@@ -552,7 +544,7 @@
         </div>
     </section>
 
-    <!-- Footer - No changes here -->
+    <!-- Footer - Keeping Latest Footer Content -->
     <footer>
         <p>© 2025 Health Point IND</p>
         <p>
