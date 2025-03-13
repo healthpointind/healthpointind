@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MRI Scan Just ₹2999! Limited Time Offer | Health Point IND</title>
+    <title>Book Diagnostic Tests Online | Health Point IND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="✅ Book MRI Scan for Just ₹2999! Limited Time Discount.  Also get CT Scan, Health Checkups & more at up to 60% OFF. Fast Reports, Trusted Labs. Book Now!">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --header-bg: #ffffff; /* White Header - Clean & Modern */
-            --hero-bg: #f0f2fa; /* Very Light Blue Hero Background */
-            --primary-color: #007bff; /* Bootstrap Primary Blue - Trustworthy & Modern */
-            --accent-color: #ffc107; /* Yellow Accent - Attention & Offers */
-            --card-bg: #ffffff; /* White Cards - Clean */
-            --footer-bg: #e9ecef; /* Light Grey Footer */
-            --text-dark: #343a40; /* Dark Text - Readable */
-            --text-light: #6c757d; /* Light Grey Text */
+            --header-bg: #5bd17f; /* Light Green Header - As Requested */
+            --hero-bg: #f0f2fa;
+            --primary-color: #007bff;
+            --accent-color: #ffc107;
+            --card-bg: #ffffff;
+            --footer-bg: #e9ecef;
+            --text-dark: #343a40;
+            --text-light: #6c757d;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             color: var(--text-dark);
-            background-color: var(--card-bg); /* Body Background White */
+            background-color: var(--card-bg);
             overflow-x: hidden;
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Modern Header - New Design */
+        /* Modern Header - Light Green, Smaller */
         header {
-            background-color: var(--header-bg);
-            padding: 1.2rem 0; /* Slightly larger header padding */
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+            background-color: var(--header-bg); /* Light Green Header */
+            padding: 0.8rem 0; /* Reduced padding */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .header-content {
@@ -45,50 +48,59 @@
         }
 
         .logo {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--header-bg); /* Logo color now same as header bg (white text on green bg achieved via header bg color) */
+             color: white; /* Logo color explicitly set to white for light green header */
             text-decoration: none;
         }
 
         .book-now-btn {
-            background-color: var(--primary-color);
+            background-color: var(--card-bg);
             color: var(--header-bg);
-            padding: 10px 22px;
-            border-radius: 5px; /* Less rounded button */
+            padding: 8px 18px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s, transform 0.2s;
-            border: 2px solid var(--primary-color); /* Add border */
+            border: 2px solid var(--header-bg); /* Border color set to header bg (green border) */
+             border: 2px solid var(--header-bg); /* Border color explicitly set to light green */
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            box-shadow: none;
         }
 
         .book-now-btn:hover {
-            background-color: var(--header-bg); /* Invert colors on hover */
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-            transform: translateY(-2px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: var(--header-bg);
+            color: var(--card-bg);
+            border-color: var(--header-bg);
+            transform: translateY(-1px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
-        /* Full-Width Hero Section - Updated Layout and Content */
+        /* Full-Width Hero Section - No Changes */
         .hero {
-            background-color: var(--hero-bg); /* Light Blue Hero Background */
-            padding: 90px 0; /* Increased vertical padding */
+            background-color: var(--hero-bg);
+            padding: 90px 0;
             text-align: center;
-            width: 100%; /* Full width hero */
+            width: 100%;
         }
 
         .hero-content {
-            max-width: 1200px; /* Max width for content inside hero */
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px; /* Horizontal padding for content */
+            padding: 0 20px;
+            animation: fadeIn 1s ease-out; /* Fade-in Animation Added */
+        }
+
+        @keyframes fadeIn { /* Fade-in Animation Keyframes */
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
 
         .hero h1 {
-            font-size: 3rem; /* Larger, more impactful headline */
+            font-size: 3rem;
             font-weight: 700;
             margin-bottom: 20px;
             line-height: 1.3;
@@ -97,17 +109,16 @@
         }
 
         .hero-price-highlight {
-            color: var(--primary-color); /* Blue Price Highlight */
+            color: var(--primary-color);
             font-weight: bolder;
-            font-size: 1.1em; /* Slightly larger */
+            font-size: 1.1em;
         }
-
 
         .hero p {
             font-size: 1.2rem;
             color: var(--text-light);
             margin-bottom: 40px;
-            max-width: 900px; /* Wider paragraph */
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -116,7 +127,7 @@
             display: inline-block;
             background-color: var(--primary-color);
             color: var(--header-bg);
-            padding: 15px 35px; /* Larger button */
+            padding: 15px 35px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: 600;
@@ -205,10 +216,11 @@
             box-shadow: 0 3px 7px rgba(0,0,0,0.15);
         }
 
-        /* Services Section - No Changes */
+        /* Services Section - Updated Top Margin */
         .services-section {
             padding: 60px 20px;
             background-color: var(--footer-bg);
+            padding-top: 40px; /* Reduced top padding to reduce margin above section title */
         }
 
         .section-title {
@@ -313,7 +325,7 @@
             color: #1a45b3;
         }
 
-        /* WhatsApp Button (No Change) */
+        /* WhatsApp Button - No Changes */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -325,16 +337,16 @@
             z-index: 1000;
         }
 
-        /* Responsive adjustments (Slightly adjusted breakpoints and sizes) */
+        /* Responsive adjustments - No Changes */
         @media (min-width: 768px) {
-            .hero h1 { font-size: 3.8rem; } /* Larger heading on desktop */
+            .hero h1 { font-size: 3.8rem; }
             .hero p { font-size: 1.3rem; }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
             .form-section-title { font-size: 2.3rem; }
         }
 
         @media (min-width: 992px) {
-            .hero h1 { font-size: 4.5rem; } /* Even larger heading on large desktop */
+            .hero h1 { font-size: 4.5rem; }
             .hero p { font-size: 1.4rem; }
             .services-grid { grid-template-columns: repeat(3, 1fr); }
             .form-section-title { font-size: 2.5rem; }
@@ -347,7 +359,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="28" alt="WhatsApp Chat">
     </a>
 
-    <!-- Header - Modern Design -->
+    <!-- Header - Modern Design, Light Green -->
     <header>
         <div class="header-content">
             <a href="#" class="logo">Health Point IND</a>
@@ -355,7 +367,7 @@
         </div>
     </header>
 
-    <!-- Full-Width Hero Section - Updated Content & Layout -->
+    <!-- Full-Width Hero Section - Updated Content, Animation -->
     <section class="hero">
         <div class="hero-content">
             <h1>Book Your <span class="hero-price-highlight">MRI Scan</span> for Just ₹2999!</h1>
@@ -364,14 +376,14 @@
         </div>
     </section>
 
-    <!-- Services Section - No Changes -->
+    <!-- Services Section - Updated Icons and Reduced Top Margin -->
     <section class="services-section" id="services">
         <h2 class="section-title">Our Diagnostic Services</h2>
         <div class="services-grid">
             <!-- Doctor Appointment -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">60% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/2967/2967853.png" class="service-icon" alt="Doctor Appointment">
+                <img src="https://cdn-icons-png.flaticon.com/512/448/448546.png" class="service-icon" alt="Doctor Appointment">
                 <h3 class="service-title">Doctor Appointment</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹400</span>
@@ -382,7 +394,7 @@
             <!-- MRI Scan -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">54% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" class="service-icon" alt="MRI Scan">
+                <img src="https://cdn-icons-png.flaticon.com/512/5475/5475158.png" class="service-icon" alt="MRI Scan">
                 <h3 class="service-title">MRI Scan</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹2,999</span>
@@ -393,7 +405,7 @@
             <!-- CT Scan -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">50% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/3038/3038030.png" class="service-icon" alt="CT Scan">
+                <img src="https://cdn-icons-png.flaticon.com/512/1667/1667141.png" class="service-icon" alt="CT Scan">
                 <h3 class="service-title">CT Scan</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹1,999</span>
@@ -404,7 +416,7 @@
             <!-- PET Scan -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">40% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/1997/1997925.png" class="service-icon" alt="PET Scan">
+                <img src="https://cdn-icons-png.flaticon.com/512/472/472121.png" class="service-icon" alt="PET Scan">
                 <h3 class="service-title">PET Scan</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹14,999</span>
@@ -415,7 +427,7 @@
             <!-- Sonography -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">40% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/1903/1903312.png" class="service-icon" alt="Sonography">
+                <img src="https://cdn-icons-png.flaticon.com/512/3038/3038073.png" class="service-icon" alt="Sonography">
                 <h3 class="service-title">Sonography</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹719</span>
@@ -426,7 +438,7 @@
             <!-- X-Ray -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">40% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/2903/2903564.png" class="service-icon" alt="X-Ray">
+                <img src="https://cdn-icons-png.flaticon.com/512/448/448568.png" class="service-icon" alt="X-Ray">
                 <h3 class="service-title">X-Ray</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹359</span>
@@ -437,7 +449,7 @@
             <!-- Mammography -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">40% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/1998/1998664.png" class="service-icon" alt="Mammography">
+                <img src="https://cdn-icons-png.flaticon.com/512/5041/5041723.png" class="service-icon" alt="Mammography">
                 <h3 class="service-title">Mammography</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹3,479</span>
@@ -448,7 +460,7 @@
             <!-- Basic Health Checkup -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">40% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063815.png" class="service-icon" alt="Basic Health Checkup">
+                <img src="https://cdn-icons-png.flaticon.com/512/3714/3714139.png" class="service-icon" alt="Basic Health Checkup">
                 <h3 class="service-title">Basic Health Checkup</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹1,799</span>
@@ -459,7 +471,7 @@
             <!-- Advance Health Checkup -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">40% OFF</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063871.png" class="service-icon" alt="Advance Health Checkup">
+                <img src="https://cdn-icons-png.flaticon.com/512/6085/6085318.png" class="service-icon" alt="Advance Health Checkup">
                 <h3 class="service-title">Advance Health Checkup</h3>
                 <div class="pricing">
                     <span class="discounted-price">₹2,399</span>
@@ -506,14 +518,14 @@
         </div>
     </section>
 
-    <!-- Testimonials Section - REMOVED -->
+    <!-- Testimonials Section - Removed -->
 
-    <!-- Footer - No Changes -->
+    <!-- Footer - Updated Privacy Policy and Terms URLs -->
     <footer>
         <p>© 2025 Health Point IND</p>
         <p>
-            <a href="#" onclick="alert('Privacy Policy Link Here'); return false;">Privacy Policy</a>
-            <a href="#" onclick="alert('Terms & Conditions Link Here'); return false;">Terms & Conditions</a>
+            <a href="https://healthpointind.github.io/privacy-policy.html" target="_blank">Privacy Policy</a>
+            <a href="https://healthpointind.github.io/terms.html" target="_blank">Terms & Conditions</a>
         </p>
     </footer>
 
@@ -553,6 +565,12 @@
         // Attach scrollToForm to service cards
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('click', scrollToForm);
+        });
+
+         // Logo refresh/homepage link
+        document.querySelector('.logo').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior if you were using a real link
+            window.location.reload(); // Simple page refresh for "homepage" effect in this context
         });
     </script>
 </body>
