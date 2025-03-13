@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --header-bg: #5bd17f; /* Light Green Header - As Requested */
+            --header-bg: #5bd17f; /* Light Green Header */
             --hero-bg: #f0f2fa;
             --primary-color: #007bff;
             --accent-color: #ffc107;
@@ -31,7 +31,7 @@
         /* Modern Header - Light Green, Smaller */
         header {
             background-color: var(--header-bg); /* Light Green Header */
-            padding: 0.8rem 0; /* Reduced padding */
+            padding: 0.7rem 0; /* Even smaller vertical padding */
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 0;
@@ -50,8 +50,7 @@
         .logo {
             font-size: 1.6rem;
             font-weight: 700;
-            color: var(--header-bg); /* Logo color now same as header bg (white text on green bg achieved via header bg color) */
-             color: white; /* Logo color explicitly set to white for light green header */
+            color: white; /* Logo color explicitly set to white for light green header */
             text-decoration: none;
         }
 
@@ -63,25 +62,24 @@
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s, transform 0.2s;
-            border: 2px solid var(--header-bg); /* Border color set to header bg (green border) */
-             border: 2px solid var(--header-bg); /* Border color explicitly set to light green */
+            border: 2px solid var(--header-bg);
             cursor: pointer;
             font-size: 0.9rem;
             box-shadow: none;
         }
 
         .book-now-btn:hover {
-            background-color: var(--header-bg);
-            color: var(--card-bg);
+            background-color: #e0e0e0;
+            color: var(--header-bg);
             border-color: var(--header-bg);
             transform: translateY(-1px);
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
-        /* Full-Width Hero Section - No Changes */
+        /* Full-Width Hero Section - Reduced Highlighted Space */
         .hero {
             background-color: var(--hero-bg);
-            padding: 90px 0;
+            padding: 70px 0; /* Reduced hero padding - vertical space reduced */
             text-align: center;
             width: 100%;
         }
@@ -90,19 +88,19 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-            animation: fadeIn 1s ease-out; /* Fade-in Animation Added */
+            animation: fadeIn 1s ease-out;
         }
 
-        @keyframes fadeIn { /* Fade-in Animation Keyframes */
+        @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem; /* Slightly smaller hero heading */
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Reduced margin */
             line-height: 1.3;
             color: var(--text-dark);
             letter-spacing: -0.02em;
@@ -115,9 +113,9 @@
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem; /* Slightly smaller paragraph font size */
             color: var(--text-light);
-            margin-bottom: 40px;
+            margin-bottom: 30px; /* Reduced margin */
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
@@ -127,11 +125,11 @@
             display: inline-block;
             background-color: var(--primary-color);
             color: var(--header-bg);
-            padding: 15px 35px;
+            padding: 14px 32px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -216,11 +214,11 @@
             box-shadow: 0 3px 7px rgba(0,0,0,0.15);
         }
 
-        /* Services Section - Updated Top Margin */
+        /* Services Section - Updated Icons, Badge Contrast */
         .services-section {
             padding: 60px 20px;
             background-color: var(--footer-bg);
-            padding-top: 40px; /* Reduced top padding to reduce margin above section title */
+            padding-top: 40px;
         }
 
         .section-title {
@@ -264,8 +262,8 @@
         }
 
         .discount-badge {
-            background-color: var(--accent-color);
-            color: var(--header-bg);
+            background-color: var(--accent-color); /* Yellow Badge Background */
+            color: var(--text-dark); /* Dark Text on Badge - Improved Contrast */
             padding: 7px 14px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -325,7 +323,7 @@
             color: #1a45b3;
         }
 
-        /* WhatsApp Button - No Changes */
+        /* WhatsApp Button - Updated Icon */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -336,6 +334,7 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             z-index: 1000;
         }
+
 
         /* Responsive adjustments - No Changes */
         @media (min-width: 768px) {
@@ -354,9 +353,9 @@
     </style>
 </head>
 <body>
-    <!-- WhatsApp Button -->
+    <!-- WhatsApp Button - Updated Icon Source -->
     <a href="https://wa.me/912012345678" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
-        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="28" alt="WhatsApp Chat">
+        <img src="whatsapp-icon.png" width="28" alt="WhatsApp Chat">  <!-- Using local WhatsApp Icon -->
     </a>
 
     <!-- Header - Modern Design, Light Green -->
