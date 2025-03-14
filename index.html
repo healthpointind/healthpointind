@@ -28,7 +28,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Sticky Header with Icons Only */
+        /* Sticky Header with Logo and Book Now Button */
         header {
             background-color: var(--header-bg);
             padding: 0.8rem 0;
@@ -58,42 +58,18 @@
         }
 
         .logo-link {
-            display: flex; /* To make the whole logo area clickable */
+            display: flex;
             align-items: center;
-            text-decoration: none; /* Remove underline from link */
+            text-decoration: none;
         }
 
         .logo {
             font-size: 1.7rem;
             font-weight: 700;
             color: var(--primary-color);
-            text-decoration: none; /* Remove underline if it was inheriting any */
-        }
-
-        .header-contact {
-            display: flex;
-            align-items: center;
-            margin-right: 15px;
-        }
-
-        .header-contact a {
-            display: flex;
-            align-items: center;
-            color: var(--text-dark);
             text-decoration: none;
-            margin-left: 15px;
-            transition: color 0.3s;
         }
 
-        .header-contact a:hover {
-            color: var(--primary-color);
-        }
-
-        .header-contact img {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
-        }
 
         .book-now-btn {
             background-color: var(--primary-color);
@@ -392,17 +368,54 @@
             color: #1a45b3;
         }
 
-        /* WhatsApp Button (No Change) */
+        /* WhatsApp Button (Updated Padding & Roundness) */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
             right: 20px;
             background: #25D366;
-            padding: 11px;
-            border-radius: 100%;
+            padding: 10px; /* Adjusted padding */
+            border-radius: 50%;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             z-index: 1000;
+            display: flex; /* Center icon inside button */
+            align-items: center;
+            justify-content: center;
         }
+
+        .whatsapp-btn img {
+            width: 28px; /* Icon size - adjust if needed */
+            height: 28px;
+            display: block; /* Ensure icon behaves as block for centering */
+        }
+
+        /* Bottom Call Button - Moved to Left */
+        .bottom-call-btn {
+            position: fixed;
+            bottom: 20px; /* Align with WhatsApp button */
+            left: 20px; /* Moved to left */
+            background-color: var(--primary-color);
+            color: var(--header-bg);
+            padding: 12px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .bottom-call-btn:hover {
+            background-color: #1a45b3;
+            transform: translateY(-2px);
+        }
+
+        .bottom-call-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
 
         /* Responsive Adjustments */
         @media (max-width: 767px) { /* Mobile screens */
@@ -417,14 +430,7 @@
             .logo {
                 display: none; /* Hide website name on mobile */
             }
-            .header-contact {
-                margin-right: 0;
-                margin-bottom: 10px;
-                justify-content: center;
-            }
-            .header-contact a {
-                margin-left: 10px;
-            }
+
             .hero h1 { font-size: 2.5rem; }
             .hero p { font-size: 1.1rem; }
             .hero-cta-btn { padding: 12px 30px; font-size: 1rem; }
@@ -450,23 +456,20 @@
 <body>
     <!-- WhatsApp Button -->
     <a href="https://wa.me/+917796400040" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
-        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="35" alt="WhatsApp Chat">
+        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp Chat">
     </a>
 
-    <!-- Sticky Header with Icons Only -->
+    <!-- Bottom Call Button - New (Moved to Left) -->
+    <a href="tel:917796400040" class="bottom-call-btn" aria-label="Call Us Now" onclick="scrollToForm()">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126521.png" alt="Call Us" >
+    </a>
+
+    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="logo-container">
-                <a href="#" class="logo-link"> <img src="https://fplogoimages.withfloats.com/actual/66d30ea4af25ad36844428bc.jpg" alt="Health Point IND Logo">
+                <a href="https://healthpointind.github.io/" class="logo-link"> <img src="https://fplogoimages.withfloats.com/actual/66d30ea4af25ad36844428bc.jpg" alt="Health Point IND Logo">
                     <a href="#" class="logo">Health Point IND</a>
-                </a>
-            </div>
-            <div class="header-contact">
-                <a href="tel:+917796400040">
-                    <img src="https://cdn-icons-png.flaticon.com/512/126/126521.png" alt="Call Us" >
-                </a>
-                <a href="https://wa.me/+917796400040">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp Chat">
                 </a>
             </div>
             <a href="#form-section" class="book-now-btn">Grab Your Discount Now</a>
@@ -482,11 +485,9 @@
         </div>
     </section>
 
-    <!-- Services Section - Reordered and Premium Health Checkup Added -->
     <section class="services-section" id="services">
         <h2 class="section-title">Our Diagnostic Services</h2>
         <div class="services-grid">
-            <!-- Services content (same as before) -->
              <!-- MRI Scan -->
             <div class="service-card" onclick="scrollToForm()">
                 <div class="discount-badge">54% OFF</div>
@@ -625,11 +626,11 @@
         </div>
     </section>
 
-    <!-- Footer - No Changes -->
+    <!-- Footer -->
     <footer>
         <p>© 2025 Health Point IND</p>
         <p>
-            <a href="https://healthpointind.github.io/privacy-policy.html">Privacy Policy</a>
+            <a href="https://healthpointind.github.io/privacy-policy.html">Privacy Policy</a> | 
             <a href="https://healthpointind.github.io/terms.html">Terms & Conditions</a>
         </p>
     </footer>
@@ -649,7 +650,7 @@
             const formValues = Object.fromEntries(formData.entries());
 
             try {
-                const response = await fetch('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL', { // Replace with your Apps Script URL
+                const response = await fetch('https://script.google.com/macros/s/AKfycbxeQbVH47cGqrvHX3xgLO7JopeqWKMhXuA0Ctu93jnuKkoz6ypHmmaje2FfIUmZXrEx/exec', { // Replace with your Apps Script URL
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
