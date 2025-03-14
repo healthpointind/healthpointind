@@ -637,40 +637,39 @@
 
     <script>
         async function submitForm() {
-            const form = document.getElementById('bookingForm');
-            const phoneInput = document.getElementById('phone');
-            const phoneValue = phoneInput.value;
+    const form = document.getElementById('bookingForm');
+    const phoneInput = document.getElementById('phone');
+    const phoneValue = phoneInput.value;
 
-            if (phoneValue.length < 10) {
-                alert('Please enter a valid 10-digit mobile number.');
-                return false; // Prevent form submission
-            }
+    if (phoneValue.length < 10) {
+        alert('Please enter a valid 10-digit mobile number.');
+        return false; // Prevent form submission
+    }
 
-            const formData = new FormData(form);
-            const formValues = Object.fromEntries(formData.entries());
+    const formData = new FormData(form);
+    const formValues = Object.fromEntries(formData.entries());
 
-            try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbxeQbVH47cGqrvHX3xgLO7JopeqWKMhXuA0Ctu93jnuKkoz6ypHmmaje2FfIUmZXrEx/exec', { // Replace with your Apps Script URL
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(formValues)
-                });
+    try {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxeQbVH47cGqrvHX3xgLO7JopeqWKMhXuA0Ctu93jnuKkoz6ypHmmaje2FfIUmZXrEx/exec', { // <-- IMPORTANT: Correct Web App URL here
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formValues)
+        });
 
-                if (response.ok) {
-                    alert('Booking request submitted successfully!');
-                    form.reset();
-                } else {
-                    alert('Failed to submit booking request. Please try again.');
-                }
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                alert('An error occurred. Please try again later.');
-            }
-            return false; // To prevent default form submission (page reload)
+        if (response.ok) {
+            alert('Booking request submitted successfully!');
+            form.reset();
+        } else {
+            alert('Failed to submit booking request. Please try again.');
         }
-
+    } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('An error occurred. Please try again later.');
+    }
+    return false; // To prevent default form submission (page reload)
+}
         function scrollToForm() {
             document.getElementById('form-section').scrollIntoView({
                 behavior: 'smooth'
