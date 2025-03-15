@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MRI Scan Just ₹2999! Limited Time Offer | Health Point IND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="✅ Book MRI Scan for Just ₹2999! Limited Time Discount.  Also get CT Scan, Health Checkups & more at up to 60% OFF. Fast Reports, Trusted Labs. Book Now!">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #ffffff;
+            --hero-bg: #f0f2fa;
+            --primary-color: #007bff;
+            --accent-color: #28a745;
+            --card-bg: #ffffff;
+            --footer-bg: #e9ecef;
+            --text-dark: #343a40;
+            --text-light: #6c757d;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: var(--text-dark);
+            background-color: var(--card-bg);
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Sticky Header with Logo and Book Now Button */
+        header {
+            background-color: var(--header-bg);
+            padding: 0.8rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+
+        .book-now-btn {
+            background-color: var(--primary-color);
+            color: var(--header-bg);
+            padding: 10px 22px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .book-now-btn:hover {
+            background-color: var(--header-bg);
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section with Animation and Background Image */
+        .hero {
+            background-color: var(--hero-bg);
+            padding: auto 0;
+            text-align: center;
+            width: 100%;
+            background-image: url('URL_OF_YOUR_BACKGROUND_IMAGE.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: var(--text-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+            background-size: 200% 200%;
+            animation: gradientAnimation 5s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+
+        .hero-content {
+            max-width: auto;
+            margin: 0 auto;
+            padding: 30px 10px;
+            background-color: rgba(240, 242, 250, 0.85);
+            border-radius: 10px;
+            animation: fadeIn 1.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-price-highlight {
+            color: var(--primary-color);
+            font-weight: bolder;
+            font-size: 1.15em;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 45px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--header-bg);
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hero-cta-btn:hover {
+            background-color: #1a45b3;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        /* Form Section - No Changes */
+        .form-section {
+            padding: 60px 20px;
+            background-color: var(--card-bg);
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .form-section-title {
+            text-align: center;
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 22px;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--text-light);
+            border-radius: 8px;
+            font-size: 1rem;
+            appearance: none;
+        }
+
+        .form-group select {
+            background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-position-y: 5px;
+            padding-right: 30px;
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: var(--header-bg);
+            padding: 12px 26px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 100%;
+            display: block;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .submit-btn:hover {
+            background-color: #1a45b3;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+        }
+
+        /* Services Section - No Changes */
+        .services-section {
+            padding: 60px 20px;
+            background-color: var(--footer-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 35px;
+            color: var(--text-dark);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08), -5px -5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1), -7px -7px 20px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            margin-bottom: 15px;
+            opacity: 1;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .discount-badge {
+            background-color: var(--accent-color);
+            color: var(--header-bg);
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .pricing {
+            margin: 16px 0;
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .discounted-price {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-right: 6px;
+            font-size: 1.1rem;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-light);
+        }
+
+        /* Footer - No Changes */
+        footer {
+            background-color: var(--footer-bg);
+            padding: 25px 0;
+            border-top: none;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 4px;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #1a45b3;
+        }
+
+        /* WhatsApp Button (Updated Padding & Roundness) */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            padding: 10px; /* Adjusted padding */
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex; /* Center icon inside button */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-btn img {
+            width: 28px; /* Icon size - adjust if needed */
+            height: 28px;
+            display: block; /* Ensure icon behaves as block for centering */
+        }
+
+        /* Bottom Call Button - Moved to Left */
+        .bottom-call-btn {
+            position: fixed;
+            bottom: 20px; /* Align with WhatsApp button */
+            left: 20px; /* Moved to left */
+            background-color: var(--primary-color);
+            color: var(--header-bg);
+            padding: 12px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .bottom-call-btn:hover {
+            background-color: #1a45b3;
+            transform: translateY(-2px);
+        }
+
+        .bottom-call-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 767px) { /* Mobile screens */
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo-container {
+                margin-bottom: 10px;
+                justify-content: center;
+            }
+            .logo {
+                display: none; /* Hide website name on mobile */
+            }
+
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
+            .hero-cta-btn { padding: 12px 30px; font-size: 1rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .form-section-title { font-size: 2rem; }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) { /* Tablets */
+            .hero h1 { font-size: 3.2rem; }
+            .hero p { font-size: 1.2rem; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .form-section-title { font-size: 2.2rem; }
+        }
+
+        @media (min-width: 992px) { /* Desktop */
+            .hero h1 { font-size: 4rem; }
+            .hero p { font-size: 1.3rem; }
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+            .form-section-title { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+917796400040" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp Chat">
+    </a>
+
+    <!-- Bottom Call Button - New (Moved to Left) -->
+    <a href="tel:917796400040" class="bottom-call-btn" aria-label="Call Us Now">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126521.png" alt="Call Us" >
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="https://healthpointind.github.io/" class="logo-link"> <img src="https://fplogoimages.withfloats.com/actual/66d30ea4af25ad36844428bc.jpg" alt="Health Point IND Logo">
+                    <a href="#" class="logo">Health Point IND</a>
+                </a>
+            </div>
+            <a href="#form-section" class="book-now-btn">Grab Your Discount Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animation and Background Image -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Book Your <span class="hero-price-highlight">MRI Scan</span> for Just ₹2999!</h1>
+            <p>Limited Time Offer! Get accurate diagnostic scans at unbeatable prices.  Also find discounts up to 60% on CT Scans, Health Checkups and more.  Trusted, NABL accredited labs. Fast reports and hassle-free booking.</p>
+            <a href="#services" class="hero-cta-btn">Explore Discounted Services</a>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <h2 class="section-title">Our Diagnostic Services</h2>
+        <div class="services-grid">
+             <!-- MRI Scan -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">54% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4835/4835984.png" class="service-icon" alt="MRI Scan">
+                <h3 class="service-title">MRI Scan</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹2,999</span>
+                    <span class="original-price">₹7,000</span>
+                </div>
+            </div>
+
+            <!-- CT Scan -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">50% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4835/4835927.png" class="service-icon" alt="CT Scan">
+                <h3 class="service-title">CT Scan</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹1,999</span>
+                    <span class="original-price">₹4,000</span>
+                </div>
+            </div>
+
+            <!-- PET Scan -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4836/4836004.png" class="service-icon" alt="PET Scan">
+                <h3 class="service-title">PET Scan</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹14,999</span>
+                    <span class="original-price">₹25,000</span>
+                </div>
+            </div>
+
+            <!-- Sonography or 2D-echo/Doppler -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4835/4835955.png" class="service-icon" alt="Sonography">
+                <h3 class="service-title">Sonography / 2D-Echo Doppler</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹719</span>
+                    <span class="original-price">₹1,200</span>
+                </div>
+            </div>
+
+            <!-- Mammography -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4835/4835995.png" class="service-icon" alt="Mammography">
+                <h3 class="service-title">Mammography</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹3,479</span>
+                    <span class="original-price">₹5,800</span>
+                </div>
+            </div>
+
+            <!-- X-Ray -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4835/4835973.png" class="service-icon" alt="X-Ray">
+                <h3 class="service-title">X-Ray</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹359</span>
+                    <span class="original-price">₹600</span>
+                </div>
+            </div>
+
+            <!-- Basic Health Checkup -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/447/447031.png" class="service-icon" alt="Basic Health Checkup">
+                <h3 class="service-title">Basic Health Checkup</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹1,799</span>
+                    <span class="original-price">₹3,000</span>
+                </div>
+            </div>
+
+            <!-- Advance Health Checkup -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/447/447024.png" class="service-icon" alt="Advance Health Checkup">
+                <h3 class="service-title">Advance Health Checkup</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹2,399</span>
+                    <span class="original-price">₹4,000</span>
+                </div>
+            </div>
+
+             <!-- Premium Health Checkup -->
+            <div class="service-card" onclick="scrollToForm()">
+                <div class="discount-badge">40% OFF</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/6472/6472714.png" class="service-icon" alt="Premium Health Checkup">
+                <h3 class="service-title">Premium Health Checkup</h3>
+                <div class="pricing">
+                    <span class="discounted-price">₹3,999</span>
+                    <span class="original-price">₹7,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section - No Changes -->
+    <section class="form-section" id="form-section">
+        <div class="form-container">
+            <h2 class="form-section-title"> Book Now! & Claim Your Discount Coupon! 🎉</h2>
+            <form id="bookingForm" onsubmit="return submitForm(event);"> <!-- Modified: Added 'event' in function call -->
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Test/Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Choose a Service --</option>
+                        <option value="MRI Scan">MRI Scan</option>
+                        <option value="CT Scan">CT Scan</option>
+                        <option value="PET Scan">PET Scan</option>
+                        <option value="Sonography / 2D-Echo Doppler">Sonography / 2D-Echo Doppler</option>
+                        <option value="Mammography">Mammography</option>
+                        <option value="X-Ray">X-Ray</option>
+                        <option value="Basic Health Checkup">Basic Health Checkup</option>
+                        <option value="Advance Health Checkup">Advance Health Checkup</option>
+                        <option value="Premium Health Checkup">Premium Health Checkup</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Health Point IND</p>
+        <p>
+            <a href="https://healthpointind.github.io/privacy-policy.html">Privacy Policy</a> |
+            <a href="https://healthpointind.github.io/terms.html">Terms & Conditions</a>
+        </p>
+    </footer>
+
+    <script>
+        async function submitForm(event) { // Modified: Added 'event' parameter
+            event.preventDefault(); // **Important: Prevent default form submission**
+
+            const form = document.getElementById('bookingForm');
+            const phoneInput = document.getElementById('phone');
+            const phoneValue = phoneInput.value;
+
+            if (phoneValue.length < 10) {
+                alert('Please enter a valid 10-digit mobile number.');
+                return false; // Prevent form submission
+            }
+
+            const formData = new FormData(form);
+            const formValues = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbznV5QzvccKrcujnnYMJtUtd8cdS0Ro8ZlcTkXogN-PFWxmGgqeuaXqYeF1C2XZFU5u/exec', { // <-- IMPORTANT: Correct Web App URL here
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formValues)
+                });
+
+                if (response.ok) {
+                    alert('Booking request submitted successfully!');
+                    form.reset();
+                } else {
+                    alert('Failed to submit booking request. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('An error occurred. Please try again later.');
+            }
+            return false; // To prevent default form submission (page reload) - **Although event.preventDefault() already does this, keeping it for extra safety**
+        }
+        function scrollToForm() {
+            document.getElementById('form-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', scrollToForm);
+        });
+    </script>
+</body>
+</html>
